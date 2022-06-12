@@ -1,5 +1,8 @@
 #!/bin/sh
 
+# SPDX-License-Identifier: GPL-3.0-or-later
+# Copyright (C) 2022 Colin B. Macdonald
+
 #xmllint --noout - << EOF
 #<pl-question-root>
 #</pl-question-root>
