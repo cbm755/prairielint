@@ -1,0 +1,16 @@
+#!/bin/sh
+
+#xmllint --noout - << EOF
+#<pl-question-root>
+#</pl-question-root>
+#EOF
+
+A=tmp_file_needs_autogen_name
+
+echo "<pl-question-root>" > $A
+cat $1 >> $A
+echo "</pl-question-root>" >> $A
+
+xmllint --noout $A
+
+rm -f $A
